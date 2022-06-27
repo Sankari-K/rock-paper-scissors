@@ -1,4 +1,5 @@
 function computerPlay() {
+    // Returns a randomly generated choice
     let computer_choice = Math.floor(Math.random() * 3);
     if (computer_choice == 0) {
         return 'Rock';
@@ -12,11 +13,13 @@ function computerPlay() {
 }
 
 function capitalize(string) {
+    // Returns a string in title case
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
 function playRound(playerSelection, computerSelection) {
-    let flag;
+    let flag; // To keep track of whether it is a win/loss/tie
+    // A +1 implies a win, -1 a loss, and 0 a tie
     if (playerSelection == computerSelection) {
         flag = 0;
     }
@@ -48,7 +51,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    let gamePoints = 0;
+    let gamePoints = 0; // To track the points of whole game
     for (let i = 0; i < 5; i++) {
         let computerSelection = computerPlay();
         let playerSelection = capitalize(prompt('Choose between Rock, Paper and Scissors!'));
