@@ -18,36 +18,36 @@ function capitalize(string) {
 }
 
 function playRound(playerSelection, computerSelection) {
-    let flag; // To keep track of whether it is a win/loss/tie
+    let won; // To keep track of whether it is a win/loss/tie
     // A +1 implies a win, -1 a loss, and 0 a tie
     if (playerSelection == computerSelection) {
-        flag = 0;
+        won = 0;
     }
     else if (playerSelection == 'Rock') {
         if (computerSelection == 'Scissors') {
-            flag = 1;
+            won = 1;
         }
         else {
-            flag = -1;
+            won = -1;
         }
     }
     else if (playerSelection == 'Paper') {
         if (computerSelection == 'Rock') {
-            flag = 1;
+            won = 1;
         }
         else {
-            flag = -1;
+            won = -1;
         }
     }
     else {
         if (computerSelection == 'Rock') {
-            flag = -1;
+            won = -1;
         }
         else {
-            flag = 1;
+            won = 1;
         }
     }
-    return flag;
+    return won;
 }
 
 function game() {
