@@ -77,3 +77,47 @@ function game() {
         console.log('The game is a tie!');
     }
 }
+let games_played = 0;
+let won = 0;
+let lost = 0;
+const user_choice = document.querySelectorAll('.big .symbol');
+ 
+user_choice.forEach((button) => {
+    button.addEventListener('click', 
+    function () {
+        games_played += 1;
+        const tot_games = document.querySelector('#tot');
+        tot_games.textContent = games_played;
+
+        let comp_choice = computerPlay();
+        const computer_choice = document.querySelector('.computer-choice');
+        computer_choice.textContent = `The computer chose: ${comp_choice}`;
+
+        let player_choice = button.id;
+        
+        let outcome = playRound(player_choice, comp_choice);
+        const roundResult = document.querySelector('.round-result');
+        if (outcome === 1)
+        {
+            won += 1;
+            const wonGames = document.querySelector('#won');
+            wonGames.textContent = won;
+            roundResult.textContent = `${player_choice} beats ${comp_choice}. You win the round!`
+        }
+        else if (outcome === -1)
+        {
+            lost += 1;
+            const lostGames = document.querySelector('#lost');
+            lostGames.textContent = lost;
+            roundResult.textContent = `${comp_choice} beats ${player_choice}. You lost the round!`
+        }
+        else {
+            roundResult.textContent = `This round is a tie!`
+        }
+    });
+}); 
+
+console.log(user_choice);
+user_choice.forEach((button) => {
+    button.addEventListener('click', function () {console.log("hu"); })
+}); 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./logos/page-icon.svg">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "game-area"> 
+        <p> <span class = "rock"> Rock </span> beats <span class = "scissors"> Scissors </span>. 
+            <span class = "scissors"> Scissors </span> beat <span class = "paper"> Paper </span>. 
+            <span class = "paper"> Paper </span> beats <span class = "rock"> Rock </span>.
+        </p>
+        <div class = "icons big">
+            <div>
+                <img class = "symbol light-peach" id="Rock" src="./logos/rock.png" alt="rock symbol">
+                <span class="rock"> Rock </span>
+            </div>
+            <div>
+                <img class = "symbol medium-peach paper" id = "Paper" src="./logos/paper.png" alt="paper symbol">
+                <span class="paper">Paper</span> 
+            </div>
+            <div>
+                <img class = "symbol dark-peach scissors" id = "Scissors" src="./logos/scissors.png" alt="scissors symbol">
+                <span class="scissors">Scissors</span>
+            </div>
+        </div>
+        <p><span class="computer-choice"></span> </p> <!--The computer chose:-->
+        <p class="round-result"> </p> <!--bleh beats bleh. you bleh-->
+        <div class="current-points"> 
+            <p class="maroon"> Total Games: <span id="tot" class="grey"> 0</span></p>
+            <p class="maroon"> You won: <span id="won" class="grey"> 0 </span></p>
+            <p class="maroon"> Computer won: <span id="lost" class="grey"> 0 </span></p>
+        </div>
+        <p class="final-result"> </p>
+        <div>
+            <a></a> <!--try again button-->
+            <a href="./index.html"></a> <!--main page-->
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>

@@ -1,7 +1,102 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 * {
     font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-    font-weight: 400; 
-} */
+    text-align: center;
+    font-size: 55px;
+    color: #777;
+} 
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.big div:hover {
+    background-color:#f6e4d155;
+}
+.big .symbol {
+    height: 200px;
+    width: 200px;
+}
+.icons div {
+    display:flex;
+    flex-direction: column;
+}
+.symbol {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 60px;
+    color: #b5838d;
+}
+
+.btn:hover {
+    background-color: #b5838d33;
+}
+
+#game-area p {
+    margin: 10px;
+
+}
+
+#game-area span {
+    font-size: 50px;
+}
+.current-points {
+    display: flex;
+}
+
+.final-result {
+    font-size: 70px;
+}
+.light-peach {
+    filter: invert(98%) sepia(66%) saturate(4282%) hue-rotate(295deg) brightness(114%) contrast(101%);
+}
+
+.medium-peach {
+    filter: invert(64%) sepia(65%) saturate(224%) hue-rotate(323deg) brightness(106%) contrast(102%);
+}
+
+.dark-peach {
+    filter: invert(75%) sepia(7%) saturate(1841%) hue-rotate(308deg) brightness(86%) contrast(110%);
+}
+
+.rock {
+    color: #ffcdb2;
+}
+
+.paper {
+    color: #ffb4a2;
+}
+
+.scissors{
+    color: #e5989b;
+}
+
+.maroon {
+    color: #b5838d;
+}
+
+.grey {
+    color: #6d6875;
+}
