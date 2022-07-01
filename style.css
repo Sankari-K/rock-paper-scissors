@@ -17,7 +17,7 @@ h1 {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .icons {
@@ -46,7 +46,7 @@ footer {
 
 .btn {
     padding: 10px;
-    font-size: 60px;
+    font-size: 65px;
     color: #b5838d;
 }
 
@@ -99,4 +99,9 @@ footer {
 
 .grey {
     color: #6d6875;
+}
+
+.current-points .maroon {
+    margin-left: 10px;
+    margin-right: 10px;;
 }
