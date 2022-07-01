@@ -67,7 +67,7 @@ footer {
 }
 
 .final-result {
-    font-size: 70px;
+    font-size: 75px;
 }
 .light-peach {
     filter: invert(98%) sepia(66%) saturate(4282%) hue-rotate(295deg) brightness(114%) contrast(101%);
@@ -105,3 +105,8 @@ footer {
     margin-left: 10px;
     margin-right: 10px;;
 }
+
+.try-again {
+    margin-right: 50px;
+}
+
